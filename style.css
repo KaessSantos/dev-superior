@@ -25,37 +25,35 @@ body, html {
 
 .orange{
     background-color: var(--cor01);
-    width: 100vw;
     height: 500px;
     position: relative;
 }
 
-.ajustes{
-    padding-right: 20px;
-    padding-left: 20px;
-}
+
 
 .cabecalho{
-   display: flex;
-   flex-direction: row;
-   justify-content:space-around;
-   align-items: center;
-   padding-top: 60px;
-   padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+   width: 80%;
+   height: 150px;
+   
 }
 
 .cabecalho ul{
     display: flex;
     flex-direction: row;
+    justify-content: end;
     align-items: center;
-    left: 60%;
-    
+    position: absolute;
+    left: 63%;
 }
 
 .cabecalho ul li {
     padding-right: 20px;
     list-style: none;
-    
 }
 
 .cabecalho ul li a {
@@ -72,6 +70,8 @@ body, html {
 #p-superior{        
     color: var(--cor02);
     font-size: 23px;
+    position: absolute;
+    left: 5%;
 }
 
 .cabecalho button {
@@ -98,17 +98,17 @@ body, html {
 .cabecalho-02{
     border-radius: 10px;
      background-color: var(--cor02);
-    max-width: 1000px;
-    min-width: 500px;
-   height: 450px;
-   margin: auto;
-   position: relative;
+    width: 960px;
+   height: 430px;
+   position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
 }
 
 #carro1{
     position:absolute;
     width: 50%;
-    top: 38%;
+    top: 32%;
     left: 48%;
 }
 
@@ -136,7 +136,7 @@ body, html {
 }
 
 
- @media screen and (max-width: 500px){
+ @media screen and (max-width: 1000px){
         .cabecalho ul li{
             display: none;
         }
@@ -157,26 +157,46 @@ body, html {
             text-align: right;
         }
 
-        .ajustes{
-            padding-right: 100px;
-            padding-left: 10px;
-        }
+        
  }
 
- @media screen and (max-width: 800px){
+ @media screen and (max-width: 600px){
     #carro1{
         position:absolute;
-        width: 70%;
+        width: 80%;
         top: 50%;
-        left: 13%;
+        left: 10%;
     }
 
     .title{
         position: relative;
-        width: 300px;
+        width: 280px;
         height: 170px;
-        top: 15%;
-        left: 15%;
+        top: 8%;
+        left: 10%;
         text-align: right;
     }
+
+    .cabecalho-02{
+        border-radius: 10px;
+         background-color: var(--cor02);
+        width: 95%;
+       height: 450px;
+       position: absolute;
+       left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 58%;
+        transform: translateX(-50%);
+       width: 120%;
+       height: 150px;
+       
+    }
+
+    
  }
