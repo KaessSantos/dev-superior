@@ -75,7 +75,9 @@ body, html {
 }
 
 .cabecalho button {
+    position: absolute;
     left: 110%;
+    right: 5%;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 40px;
@@ -85,6 +87,7 @@ body, html {
     border-radius: 5px;
     color: var(--cor02);
     font-weight: bold;
+    
 }
 
 .cabecalho button:hover{
@@ -136,31 +139,53 @@ body, html {
 }
 
 
- @media screen and (max-width: 1000px){
-        .cabecalho ul li{
-            display: none;
-        }
+@media screen and (max-width: 1000px){
+    .cabecalho ul li{
+        display: none;
+    }
+    #carro1{
+        position:absolute;
+        width: 50%;
+        top: 40%;
+        left: 45%;
+    }
 
-        #carro1{
-            position:absolute;
-            width: 70%;
-            top: 50%;
-            left: 13%;
-        }
-
-        .title{
-            position: relative;
-            width: 300px;
-            height: 170px;
-            top: 15%;
-            left: 15%;
-            text-align: right;
-        }
-
+    .title{
+        position: absolute;
+        width: 280px;
         
+        top: 40%;
+        left: 10%;
+        text-align: right;
+    }
+
+    .cabecalho-02{
+        border-radius: 10px;
+         background-color: var(--cor02);
+        width: 95%;
+       height: 450px;
+       position: absolute;
+       left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        left: 57%;
+        transform: translateX(-50%);
+        width: 120%;
+       height: 120px;
+       
+    }
+
+    
  }
 
- @media screen and (max-width: 600px){
+ @media screen and (max-width: 800px){
+    .cabecalho ul li{
+        display: none;
+    }
     #carro1{
         position:absolute;
         width: 80%;
@@ -199,3 +224,5 @@ body, html {
 
     
  }
+
+
