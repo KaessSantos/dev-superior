@@ -190,11 +190,10 @@ body, html {
     .cabecalho{
         display: flex;
         align-items: center;
-        position: relative;
-        left: 58%;
+        left: 57%;
         transform: translateX(-50%);
-       width: 120%;
-       height: 150px;
+        width: 120%;
+       height: 120px;
        
     }
 
