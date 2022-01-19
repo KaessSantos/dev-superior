@@ -34,21 +34,23 @@ body, html {
 .cabecalho{
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-   width: 80%;
+   width: 960px;
    height: 150px;
    
 }
 
 .cabecalho ul{
+
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
     position: absolute;
     left: 63%;
+    padding-right:60px;
 }
 
 .cabecalho ul li {
@@ -71,13 +73,10 @@ body, html {
     color: var(--cor02);
     font-size: 23px;
     position: absolute;
-    left: 5%;
+    padding-left: 30px;
 }
 
 .cabecalho button {
-    position: absolute;
-    left: 110%;
-    right: 5%;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 40px;
@@ -104,6 +103,7 @@ body, html {
     width: 960px;
    height: 430px;
    position: absolute;
+   top: 30%;
    left: 50%;
     transform: translateX(-50%);
 }
@@ -139,20 +139,18 @@ body, html {
 }
 
 
-@media screen and (max-width: 1000px){
-    .cabecalho ul li{
-        display: none;
-    }
+@media screen and (max-width: 1100px){
+   
     #carro1{
         position:absolute;
-        width: 50%;
+        max-width: 50%;
         top: 40%;
         left: 45%;
     }
 
     .title{
         position: absolute;
-        width: 280px;
+        max-width: 280px;
         
         top: 40%;
         left: 10%;
@@ -182,22 +180,63 @@ body, html {
     
  }
 
- @media screen and (max-width: 800px){
+ @media screen and (max-width: 900px){
     .cabecalho ul li{
         display: none;
     }
     #carro1{
         position:absolute;
         width: 80%;
-        top: 50%;
-        left: 10%;
+        top: 40%;
+        left: 45%;
     }
 
     .title{
         position: relative;
         width: 280px;
         height: 170px;
-        top: 8%;
+        top: 40%;
+        left: 5%;
+        text-align: right;
+    }
+
+    .cabecalho-02{
+        border-radius: 10px;
+         background-color: var(--cor02);
+        width: 95%;
+       height: 450px;
+       position: absolute;
+       left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        left: 57%;
+        transform: translateX(-50%);
+        width: 120%;
+       height: 120px;
+       
+    }
+
+    
+ }
+
+ @media screen and (max-width: 576px){
+    .cabecalho ul li{
+        display: none;
+    }
+    #carro1{
+        position:absolute;
+        width: 95%;
+        top: 60%;
+        left: 25%;
+    }
+
+    .title{
+        position: absolute;
+        top: 15%;
         left: 10%;
         text-align: right;
     }
@@ -224,5 +263,6 @@ body, html {
 
     
  }
+
 
 
