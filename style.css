@@ -150,7 +150,7 @@ nav ul button:hover{
 
 @media screen and (max-width: 576px) {
     
-    nav ul li{
+    nav ul li a{
         display: none;
     }
     
