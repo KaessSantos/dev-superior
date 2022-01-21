@@ -17,7 +17,7 @@ body, html {
     height: 100vh;
 }
 
-.cabecalho{
+header{
     background-color: var(--cor01);
     width: 100%;
     height: 500px;
@@ -31,7 +31,7 @@ body, html {
     padding: 10px;
 }
 
-.menu-nav{
+nav{
     width: 100%;
     height: 125px;
     display: flex;
@@ -47,27 +47,27 @@ body, html {
     font-weight: 500;
 }
 
-.menu-nav ul{
+nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.menu-nav ul li{
+nav ul li{
     padding: 10px;
 }
 
-.menu-nav ul li a{
+nav ul li a{
     text-decoration: none;
     color: var(--cor02);
 }
 
-.menu-nav ul li a:hover{
+nav ul li a:hover{
     color: rgba(2, 2, 117, 0.534);
     transition-duration: 0.5s;
 }
 
-.menu-nav ul button{
+nav ul button{
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 38px;
@@ -82,7 +82,7 @@ body, html {
     margin-left: 30px;
 }
 
-.menu-nav ul button:hover{
+nav ul button:hover{
     background-color: var(--cor02);
     color: white;
     transition-duration: 0.5s;
@@ -144,6 +144,31 @@ body, html {
     transition: transform 0.5s;
 }
 
+
+/*media query header*/
+
+
+@media screen and (max-width: 576px) {
+    
+    nav ul li{
+        display: none;
+    }
+    
+    .title-h-p{
+        position: absolute;
+        bottom: 60%;
+        left: 15%; 
+    }
+
+    #carro1{
+        width: 70%;
+        position: absolute;
+        right: 30%;
+        bottom: 15%;
+        left: 15%;
+    }
+   
+}
 
 
 
